@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>fiona delaloye</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<link href="https://fonts.googleapis.com/css?family=Athiti:500" rel="stylesheet">	
+		<link href="https://fonts.googleapis.com/css?family=Athiti:500" rel="stylesheet">
 	</head>
 	
 	<body>
@@ -14,23 +14,21 @@
 		
 		<div class="nav">
 			<ul>
-			<li><a href="about.html">hey</a></li>
- 			<li><a href="graphisme.html">graphisme</a></li>
-			<li><a href="#">photographie</a></li>
-			<li><a href="https://www.instagram.com/fionadelaloye_/">instagram</a></li>
-			<li><a href="mariages.html">photos pro</a></li>
+				<li><a href="about.html">hey</a></li>
+ 				<li><a href="#" onclick="filtrer('graphisme');">graphisme</a></li>
+				<li><a href="#" onclick="filtrer('photo');">photographie</a></li>
+				<li><a href="https://www.instagram.com/fionadelaloye_/">instagram</a></li>
+				<li><a href="mariages.html">photos pro</a></li>
 		</ul>
 		</div> <!-- fin nav -->
-		<div class= "contenuindex">
-			<img id="hirondelle" class="opacite" src="img/hirondelle.png">			
-			<img id="jjdress"class="opacite" src="img/jjdress.jpg">
-			<a href="hommage.html"><img id="hommage" class="opacite"src="img/hommage.jpg"></a>
-			<a href="piscine.html"><img id="piscine" class="opacite"src="img/piscine.jpg"></a>
-			<a href="voeux.html"><img id="cartevoeux" class="opacite"src="img/cartevoeux.jpg"></a>
-			<a href="cafe.html"><img id="cafe" class="opacite"src="img/cafe.jpg"></a>
-			<a href="porteouverte.html"><img id="porteouverte" class="opacite"src="img/porteouverte.jpg"></a>
-
-
+		<div class="contenuindex">
+			<a class="objet graphisme"  href="#"><img id="hirondelle" class="opacite" src="img/hirondelle.png"></a>		
+			<a class="objet graphisme" href="#"><img id="jjdress"class="opacite" src="img/jjdress.jpg"></a>
+			<a class="objet photo" href="hommage.html"><img id="hommage" class="opacite" src="img/hommage.jpg"></a>
+			<a class="objet graphisme"  href="piscine.html"><img id="piscine" class="opacite" src="img/piscine.jpg"></a>
+			<a class="objet graphisme" href="voeux.html"><img id="cartevoeux" class="opacite" src="img/cartevoeux.jpg"></a>
+			<a class="objet graphisme" href="cafe.html"><img id="cafe" class="opacite" src="img/cafe.jpg"></a>
+			<a class="objet graphisme" href="porteouverte.html"><img id="porteouverte" class="opacite" src="img/porteouverte.jpg"></a>
 		</div> <!-- contenuindex -->
 
 		<div class="footer">
@@ -38,5 +36,31 @@
 		</div>
 			
 		</div>
+		<script>	
+			
+			function filtrer(classefiona) {
+				console.log("classe: " + classefiona);
+
+				// 1: on masque tout 
+				var objetsfiona = document.getElementsByClassName("objet");
+				
+				// une boucle for:
+				var i;
+				for (i = 0; i < objetsfiona.length; i++) {
+				    objetsfiona[i].style.display = "none";
+				}
+				
+				// 2: on fait réapparaitre les éléments filtrés
+				var objetsvisibles = document.getElementsByClassName(classefiona);
+				
+				var i;
+				for (i = 0; i < objetsvisibles.length; i++) {
+				    objetsvisibles[i].style.display = "block";
+				}
+				
+			};		
+
+		
+		</script>
 	</body>	
 </html>
