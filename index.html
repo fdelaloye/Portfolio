@@ -1,82 +1,73 @@
-essai jQuery 1 
-
 <!doctype html>
 <html lang="fr">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="initial-scale=1.0">
-<title>fiona delaloye</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-<link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
-<style>
-  #draggable { width: 150px; height: 150px; padding: 0.5em; }
-  </style>
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-</head>
-<body>
-	<div id="global">
-<!--<header>
-<a href="index.html"><h1>Fiona Delaloye</h1></a>
-</header>-->
-<div class="nav">
-<ul>
-<li><a href="index.html"><h1>Fiona Delaloye</h1></a></li>
-<li><a href="about.html">hey</a></li>
- 	<li><a href="#" onclick="filtrer('graphisme');">graphisme</a></li>
-<li><a href="#" onclick="filtrer('photo');">photographie</a></li>
-<li><a href="https://www.instagram.com/fionadelaloye_/">instagram</a></li>
-<li><a href="mariages.html">pro</a></li>
-</ul>
-</div> <!-- fin nav -->
-<div class="contenuindex">
-<div id="draggable" class="ui-widget-content">
-	<a class="objet graphisme" id="draggable1" href="hirondelle.html"><img id="hirondelle" class="opacite" src="img/hirondelle.jpg"></a>
-	<a class="objet graphisme"  id="draggable2" href="piscine.html"><img id="piscine" class="opacite" src="img/piscine.jpg"></a>
-	<a class="objet graphisme" id="draggable3" href="#"><img id="jjdress "class="opacite" src="img/jjdress.png"></a>
-	<a class="objet photo" id="draggable4" href="hommage.html"><img id="hommage" class="opacite" src="img/hommage.jpg"></a>
+	<head>		
+		<title>fiona delaloye</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+	<!-- <style>
+  		#draggable { width: 200px; height: 150px; padding: 0.5em; }
+	</style> -->
+	</head>
+	
+	<body>
+		<div id="global">
+			<div class="nav">
+				<ul>
+					<li><a href="index.html"><h1>Fiona Delaloye</h1></a></li>
+					<li><a href="about.html">hey</a></li>
+ 					<li><a href="#" onclick="filtrer('graphisme');">graphisme</a></li>
+					<li><a href="#" onclick="filtrer('photo');">photographie</a></li>
+					<li><a href="https://www.instagram.com/fionadelaloye_/">instagram</a></li>
+					<li><a href="mariages.html">pro</a></li>
+				</ul>
+			</div> <!-- fin nav -->
+			<div class="contenuindex">
+			<div id="draggable" class="ui-widget-content">	
+				<a class="objet graphisme" id="draggable1" href="hirondelle.html"><img id="hirondelle" class="opacite" src="img/hirondelle.jpg"></a>
+				<a class="objet graphisme" id="draggable2" href="#"><img id="jjdress"class="opacite" src="img/jjdress.png"></a>
+				<a class="objet photo" id="draggable3" href="hommage.html"><img id="hommage" class="opacite" src="img/hommage.jpg"></a>
+				<a class="objet graphisme"  id="draggable4"  href="piscine.html"><img id="piscine" class="opacite" src="img/piscine.jpg"></a>
+				<a class="objet graphisme"  id="draggable5" href="voeux.html"><img id="cartevoeux" class="opacite" src="img/cartevoeux.jpg"></a>
+				<a class="objet graphisme"  id="draggable6" href="cafe.html"><img id="cafe" class="opacite" src="img/cafe.jpg"></a>
+				<a class="objet graphisme"  id="draggable7" href="porteouverte.html"><img id="porteouverte" class="opacite" src="img/porteouverte.jpg"></a>
+				<a class="objet graphisme"  id="draggable8" href="calembour.html"><img id="calembour" class="opacite" src="img/calembour.png"></a>
+			</div><!-- fin contenuindex -->
+	</div> <!-- fin global -->
+		<!--<div class="footer">
+		<p>© fiona delaloye</p>
+		</div>-->
 
-</div>
+	<script>
+		function filtrer(classefiona) {
+		console.log("classe: " + classefiona);
+			
+		// 1: on masque tout 
+		var objetsfiona = document.getElementsByClassName("objet");
+		
+		// une boucle for:
+		var i;
+		for (i = 0; i < objetsfiona.length; i++) {
+  		 objetsfiona[i].style.display = "none";
+		}
 
-
-<!-- <a class="objet graphisme"  href="hirondelle.html"><img id="hirondelle" class="opacite" src="img/hirondelle.jpg"></a>
-<a class="objet graphisme" href="#"><img id="jjdress"class="opacite" src="img/jjdress.png"></a>
-<a class="objet photo" href="hommage.html"><img id="hommage" class="opacite" src="img/hommage.jpg"></a>
-<a class="objet graphisme"  href="piscine.html"><img id="piscine" class="opacite" src="img/piscine.jpg"></a>
-<a class="objet graphisme" href="voeux.html"><img id="cartevoeux" class="opacite" src="img/cartevoeux.jpg"></a>
-<a class="objet graphisme" href="cafe.html"><img id="cafe" class="opacite" src="img/cafe.jpg"></a>
-<a class="objet graphisme" href="porteouverte.html"><img id="porteouverte" class="opacite" src="img/porteouverte.jpg"></a>
-<a class="objet graphisme"  href="calembour.html"><img id="calembour" class="opacite" src="img/calembour.png"></a>	-->
-</div> <!-- contenuindex -->
-
-<!--<div class="footer">
-<p>© fiona delaloye</p>
-</div>-->
-</div>
-<script>
-function filtrer(classefiona) {
-console.log("classe: " + classefiona);
-
-// 1: on masque tout 
-var objetsfiona = document.getElementsByClassName("objet");
-// une boucle for:
-var i;
-for (i = 0; i < objetsfiona.length; i++) {
-   objetsfiona[i].style.display = "none";
-}
-// 2: on fait réapparaitre les éléments filtrés
-var objetsvisibles = document.getElementsByClassName(classefiona);
-var i;
-for (i = 0; i < objetsvisibles.length; i++) {
-   objetsvisibles[i].style.display = "block";
-}
-};
-</script>
+		// 2: on fait réapparaitre les éléments filtrés
+		var objetsvisibles = document.getElementsByClassName(classefiona);
+		var i;
+		for (i = 0; i < objetsvisibles.length; i++) {
+ 		objetsvisibles[i].style.display = "block";
+		}
+		};
+	</script>
+	
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
  	<script>
-  $( function() {
-    $( "#draggable1" ).draggable();
- 	} );
+		$( function() {
+		$( "#draggable1" ).draggable();		
+ 		} );
  	</script>
  	<script>
  		$( function() {
@@ -93,7 +84,30 @@ for (i = 0; i < objetsvisibles.length; i++) {
     	$( "#draggable4" ).draggable();
  		} );
  	</script>
-</body>
+ 	<script>
+  		$( function() {
+    	$( "#draggable5" ).draggable();
+ 		} );
+ 	</script>
+ 	<script>
+  		$( function() {
+    	$( "#draggable6" ).draggable();
+ 		} );
+ 	</script>
+ 	<script>
+  		$( function() {
+    	$( "#draggable7" ).draggable();
+ 		} );
+ 	</script>
+ 	<script>
+  		$( function() {
+    	$( "#draggable8" ).draggable();
+ 		} );
+ 	</script>
+ 	
+
+
+ 	</body>
 </html>
 
 
