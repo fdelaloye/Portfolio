@@ -1,7 +1,6 @@
 html { 
 	margin:0; 
 	padding:0;
-	box-sizing: border-box;
 }
 	*, *:before, *:after {
 	box-sizing: inherit;
@@ -12,12 +11,18 @@ body {
 	font-family: 'Athiti', sans-serif;
 	font-size: 12pt;
 	width: 100%;
+
 }
 
 #global {
 	margin-left: auto;
   	margin-right: auto;
   	width:	100%;
+  	/* 
+background-image:url(img/fond.jpg);
+	background-position:center center;
+ */
+
 }
 
 h1 {
@@ -41,7 +46,14 @@ header {
 .nav {
 	width: 100%;
 	margin:0 auto;
-	height: 20%;
+	height: 1400px;
+	padding-left: 3%;
+	display: block;
+	
+}
+
+.galerieindex {
+	width: 100%;
 }
 
 
@@ -64,109 +76,75 @@ li a:hover {
 	color: blue;
 }
 
-/* 
-.contenugalerie {
-	width: 100%
-}
-
-.contenuindex {
-    background-color: red;
-    width: 40%;
-    float: left;
-    display: block;
-}
-
-
-.contenuindex2 {
-    float: left;
-    width: 40%;
-    background-color: pink;
-    
-}
-
-.contenuindex img {
-	width: 30%;
-}
-
-
-.contenuindex2 img {
-	width: 30%;
-}
- */
-
-.contenugalerie {
-	height: 1600px;
-}
-
 
 #cartevoeux {
-width: 200px;
-position:absolute;
-left: 55%;
-top: 100%;
-z-index: 1;
+	width: 230px;
+	position:absolute;
+	left: 57%;
+	top: 110%;
+	z-index: 1;
 }
 
 #porteouverte {
-width: 200px;
-position:absolute;
-left: 10%;
-top: 40%;
-z-index: 8;
+	width: 200px;
+	position:absolute;
+	left: 10%;
+	top: 40%;
+	z-index: 8;
 }
 
 #hommage {
-width: 500px;
-display:block;
-position:absolute;
-left: 48%;
-top: 75%;
-z-index: 3;
+	width: 300px;
+	display:block;
+	position:absolute;
+	left: 70%;
+	top: 75%;
+	z-index: 3;
 }
 
 #jjdress {
-width: 300px;
-display:block;
-position:absolute;
-left: 40%;
-top: 60%;
-z-index: 4;
+	width: 200px;
+	display:block;
+	position:absolute;
+	left: 40%;
+	top: 150%;
+	z-index: 4;
 }
 
 #piscine {
-width: 350px;
-display:block;
-position:absolute;
-left: 45%;
-top: 28%;
-z-index: 5;
+	width: 350px;
+	display:block;
+	position:absolute;
+	left: 50%;
+	top: 28%;
+	z-index: 5;
 }
 
 #hirondelle {
-width: 200px;
-display:block;
-position:absolute;
-top: 30%;
-left: 25%;
-z-index: 6;
+	width: 200px;
+	display:block;
+	position:absolute;
+	top: 30%;
+	left: 30%;
+	z-index: 6;
 }
 
 #cafe {
-width: 350px;
-display: block;
-position: absolute;
-top: 70%;
-left: 20%;
-z-index: 7;
+	width: 350px;
+	display: block;
+	position: absolute;
+	top: 70%;
+	left: 20%;
+	z-index: 7;
 }
 
 #calembour {
-width: 400px;
-display: block;
-position: absolute;
-top: 120%;
-left: 30%;
-z-index: 8;
+	width: 300px;
+	display: block;
+	position: absolute;
+	top: 140%;
+	left: 15%;
+	z-index: 8;
 }
 
 
@@ -182,60 +160,7 @@ z-index: 8;
 	opacity: 0.7; filter: alpha(opacity=30);
 }
 
-/** .objet {
-	width: 30%;
-	display: block;
-	background-color: pink;
-}
 
-.objet img {
-	width: 100%;
-	padding-left: 40%;
-
-} **/
-
-
-/* 
-#cartevoeux { 
-	width: 20%;
-	z-index: 9;
-}
-
-#porteouverte {
-	width: 20%;
-	z-index: 2;
-}
-
-#hommage {
-	width: 20%;
-	z-index: 3;
-}
-
-#jjdress {
-	width: 20%;
-	z-index:4;
-}
-
-#piscine {
-	width: 20%;
-	z-index: 5;
-}
-
-#hirondelle {
-	width: 20%;
-	z-index: 6;
-}
-
-#cafe {
-	width: 20%;
-	z-index: 7;
-}
-
-#calembour {
-	width: 20%;
-	z-index: 8;
-}
- */
 
 
 /** fin page d'accueil **/
@@ -247,7 +172,7 @@ z-index: 8;
 /** toutes les pages **/
 
 .galerie {
-	width: 50%;
+	width: 40%;
 	padding-left: 5%;
 	float: left;
 /* background-color: blue; */
@@ -263,13 +188,12 @@ z-index: 8;
 }
 
 .descriptif {
-	position: fixed;
  	padding-left: 50%;
  	padding-top: 5%;
+ 	width: 25%; 	
 }
 
 .descriptifme {
-	position: fixed;
  	padding-left: 50%;
  	padding-top: 5%;
 }
@@ -280,7 +204,7 @@ z-index: 8;
 	margin: 0;
 	padding-top: 30%;
 	padding-left: 30%;
-	color: blue;
+	display: block;
 }
 
 .footer {
@@ -317,12 +241,95 @@ a:hover {
 
 
 
+@media screen and (max-width: 640px) {
+
+.nav {
+	width: 50px;
+	float: left;
+}
+
+#global {
+      float: none;
+      width: auto;
+   }
+   
+.galerie {
+   width: 100%;
+}
+
+.galerie img {
+	width: 90%;
+}
+
+.descriptif {
+	float: left;
+	width: 80%;
+	padding: 5%;
+	padding-top: 10%;
+}
+
+.home {
+	float: left;
+	margin: 0 auto;
+	padding: 5%;
+	}
+
+.footer {
+	float: left;
+	margin: 0 auto;
+	padding: 5%;
+}
+
+.galerieindex {	
+float: left;
+	width: 80%;
+	padding: 5%;
+	padding-top: 10%;}
+
+#cartevoeux {
+	width: 50px;
+	float: left;
+}
+
+#porteouverte {
+		width: 50px;
+
+}
+
+#hommage {
+	width: 50px;
+
+}
+
+#jjdress {
+	width: 50px;
+
+}
+
+#piscine {
+	width: 50px;
+
+}
+
+#hirondelle {
+	width: 50px;
+
+}
+
+#cafe {
+	width: 50px;
+
+}
+
+#calembour {
+	width: 50px;
+
+}
+
+}
 
 
-
-
-
-
+}
 
 
 
