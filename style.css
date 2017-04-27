@@ -8,7 +8,7 @@ html {
 
 
 body {
-	font-family: 'Athiti', sans-serif;
+	font-family: 'Miriam Libre', sans-serif;
 	font-size: 12pt;
 	width: 100%;
 
@@ -25,16 +25,6 @@ background-image:url(img/fond.jpg);
 
 }
 
-h1 {
-	font-size: 15pt;
-}
-
-h2 {
-	color: blue;
-	font-size: 12pt;
-	margin: 0;
-}
-
 /** page d'accueil **/
 
 
@@ -46,21 +36,8 @@ h2 {
 	
 }
 
-.galerienav {
-	width: 100%;
-}
-
-.galerienav img {
-	width: 40%;
-	margin-left: 25%;
-	margin-right: 20%;
-	padding: 2%;
-	padding-top: 15%;
-	
-}
-
 ul {
-	width: 1000px;
+	width: 100%;
     list-style-type: none;
     margin: 0;
     position: fixed;
@@ -72,12 +49,25 @@ li {
     display: inline;
     margin-right: 1%;
 	margin-left: 1%;
+	font-size: 25px;
 }
 
 li a:hover {
 	color: blue;
 }
 
+
+.galerienav {
+	width: 100%;
+}
+
+.galerienav img {
+	width: 35%;
+	margin-left: 28%;
+	margin-right: 20%;
+	padding: 2%;
+	padding-top: 15%;	
+}
 
 .opacite {
 	opacity: 1; filter: alpha(opacity=100);
@@ -113,10 +103,6 @@ li a:hover {
  	width: 25%; 	
 }
 
-.descriptifme {
- 	padding-left: 50%;
- 	padding-top: 5%;
-}
 
 .home {
 	width: 10%;
@@ -139,13 +125,23 @@ li a:hover {
 
 
 
-/** images cv **/
+/** about **/
+
+.pabout1 {
+	font-size: 35px;
+}
+
+.pabout2 {
+	font-size: 25px;
+	padding-bottom: 5%;
+}
 
 #me {
-	width: 40%;
-	padding-left: 2%;
-	padding-top: 2%;
+	width: 10%;
+	padding-top: 3%;
+	padding-left: 23%;
 }
+
 
 /** liens **/
 
@@ -195,11 +191,25 @@ a:hover {
 	padding: 5%;
 }
 
-.galerieindex {	
-float: left;
+.galerienav {	
+	width: 100%;
+/* 
+	background-color: green;
+ */
+}
+
+.galerienav img {
 	width: 80%;
-	padding: 5%;
-	padding-top: 10%;}
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-top: 30%;
+}
+
+
+li {
+	font-size: 70%;
+	margin: 0 auto;
+	}
 
 
 
