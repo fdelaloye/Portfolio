@@ -100,7 +100,6 @@ h2 {
  	padding-top: 5%;
  	width: 20%; 	
  	position: fixed;
-
 }
 
 /* 
@@ -185,7 +184,6 @@ body {
 /* 
 .nav {
 	width: 90%;
-	background-color: pink;
 }
  */
    
@@ -252,7 +250,6 @@ ul {
 	float: left;
 	padding-left: 5%;
 	padding-top: 2%;
-	background-color: pink;
 	font-size: 12px;
 }
 
