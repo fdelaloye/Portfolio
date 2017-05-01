@@ -180,11 +180,14 @@ body {
 	width: 100%;
 }
 
+/* 
 .nav {
-	width: 100%;
-	padding-left: 5%;
+	width: 90%;
+	background-color: pink;
 }
+ */
    
+
 .galerie {
    width: 90%;
 }
@@ -202,6 +205,10 @@ body {
 
 .home {
 	position: relative;
+	width: 10%;
+	margin:0;
+	padding-left: 70%;
+	padding-top: 0;
 }
 
 .footer {
@@ -213,7 +220,7 @@ body {
 
 .galerienav {	
 	width: 100%;
-	padding-top: 30%;
+	padding-top: 40%;
 }
 
 .galerienav img {
@@ -224,30 +231,30 @@ body {
 
 
 li {
-	font-size: 100%;
+	font-size: 13px;
 	margin: 0 auto;
 	margin-right: 2%;
 	margin-left: 1%;
 }
 
-
 ul { 
-    padding: 0;
+    padding-left: 8%;
+    width: 90%;
 }
 
 
 .galerieabout {
-	width: 100%;
+	width: 50%;
 	float: left;
 	padding-left: 5%;
 	padding-top: 2%;
+	background-color: pink;
+	font-size: 12px;
 }
 
-.galerieabout2 {
-	position: fixed;
-	padding-left: 60%;
-	width: 50%;
-	padding-top: 7%;
+#me {
+	width: 100%;
+	padding-top: 30%;
 
 }
 
