@@ -1,6 +1,9 @@
 html { 
 	margin:0; 
 	padding:0;
+/* 
+	box-sizing: border-box;	
+ */
 }
 	*, *:before, *:after {
 	box-sizing: inherit;
@@ -118,7 +121,7 @@ h2 {
 	float: left;
 	bottom: 0;
 	font-size: 10px;
-	display: block;
+	box-sizing: border-box;
 	padding-left: 6%;
 }
 
@@ -181,13 +184,6 @@ body {
 	width: 100%;
 }
 
-/* 
-.nav {
-	width: 90%;
-}
- */
-   
-
 .galerie {
    width: 90%;
 }
@@ -213,12 +209,15 @@ body {
 }
  */
 
+
 .footer {
 	float: left;
+	width: 100%;
 	margin: 0 auto;
-	padding-left: 10%;
-	padding-top: 20%;
+	padding-top: 5%;
+	padding-left: 2%;
 }
+
 
 .galerienav {	
 	width: 100%;
@@ -233,29 +232,35 @@ body {
 
 
 li {
-	font-size: 13px;
+	font-size: 17px;
+	margin: 0;
+/* 
 	margin: 0 auto;
 	margin-right: 2%;
-	margin-left: 1%;
+ */
 }
 
 ul { 
-    padding-left: 8%;
-    width: 90%;
+    width: 80%;
 }
 
 
 .galerieabout {
-	width: 50%;
+	width: 45%;
 	float: left;
 	padding-left: 5%;
 	padding-top: 2%;
 	font-size: 12px;
 }
 
+.galerieabout2 {
+	width: 30%;
+	float: left;
+}
+
 #me {
 	width: 100%;
-	padding-top: 30%;
+	padding-top: 20%;
 
 }
 
